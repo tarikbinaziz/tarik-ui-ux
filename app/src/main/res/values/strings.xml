@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IBhai</string>
+    <string name="camera_gallery">Gallery image pic or camera image \n capture procedure is done</string>
+    <string name="write_your_experience">write your experience</string>
+</resources>

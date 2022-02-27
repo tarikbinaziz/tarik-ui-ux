@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/screen"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_baseline_image_search_24"
+        android:padding="10dp"
+        android:text="select photo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/camera_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="116dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/camera_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_baseline_camera_alt_24"
+        android:padding="10dp"
+        android:text="select photo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/seved_photoId"
+        app:layout_constraintEnd_toEndOf="@+id/select_id"
+        app:layout_constraintStart_toStartOf="@+id/select_id"
+        app:layout_constraintTop_toBottomOf="@+id/select_id"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/seved_photoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_baseline_photo_24"
+        android:padding="10dp"
+        android:text="select photo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/rate_usId"
+        app:layout_constraintEnd_toEndOf="@+id/camera_id"
+        app:layout_constraintStart_toStartOf="@+id/camera_id"
+        app:layout_constraintTop_toBottomOf="@+id/camera_id"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rate_usId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+        android:padding="10dp"
+        android:text="select photo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/similer_appId"
+        app:layout_constraintEnd_toEndOf="@+id/seved_photoId"
+        app:layout_constraintStart_toStartOf="@+id/seved_photoId"
+        app:layout_constraintTop_toBottomOf="@+id/seved_photoId"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reach_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_baseline_contact_phone_24"
+        android:padding="10dp"
+        android:text="select photo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/similer_appId"
+        app:layout_constraintStart_toStartOf="@+id/similer_appId"
+        app:layout_constraintTop_toBottomOf="@+id/similer_appId"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/similer_appId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:drawableLeft="@drawable/ic_baseline_apps_24"
+        android:padding="10dp"
+        android:text="select photo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/reach_id"
+        app:layout_constraintEnd_toEndOf="@+id/rate_usId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rate_usId"
+        app:layout_constraintTop_toBottomOf="@+id/rate_usId"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

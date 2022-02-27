@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reach"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropdown_eid"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="89dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="subject"
+            android:inputType="none"
+
+            android:textSize="20sp"
+            tools:ignore="LabelFor,MissingConstraints" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/nameId"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/rech_button_shape"
+        android:hint="Enter your Name"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/dropdown_eid"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <EditText
+        android:id="@+id/email_Id"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/rech_button_shape"
+        android:hint="Enter your Email"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/nameId"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <EditText
+        android:id="@+id/comment_id"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+       android:gravity="top"
+       android:padding="10dp"
+        android:background="@drawable/rech_button_shape"
+        android:hint="Enter your Email"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/email_Id"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@id/comment_id"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
